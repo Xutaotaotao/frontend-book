@@ -5,6 +5,10 @@
 - Vscode
 首推Vscode(下载地址:https://code.visualstudio.com/),轻量级的编辑器，丰富的插件满足几乎前端开发的所有需求。
 
+## 谷歌浏览器
+
+不是下载一个谷歌浏览器浏览网页就可以了，前端开发者需要学会玩它,学会使用Chrome DevTools(https://leeon.gitbooks.io/devtools/content/)
+
 ## 环境
 
 ### Node.js
