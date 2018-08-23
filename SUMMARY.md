@@ -19,7 +19,7 @@
     * [CSS选择器](chapter3/section3.8.md)
     * [CSS格式化上下文](chapter3/section3.9.md)
     * [CSS3新特性](chapter3/section3.10.md)
-* [JavaScript基础](chapter4/README.md)
+* [JavaScript基础(ES5)](chapter4/README.md)
     * [JavaScript语法基础](chapter4/section4.1.md)
     * [作用域](chapter4/section4.2.md)
     * [变量对象](chapter4/section4.3.md)

@@ -2,8 +2,7 @@
 
 ## 编辑器
 
-- Vscode
-首推Vscode(下载地址:https://code.visualstudio.com/),轻量级的编辑器，丰富的插件满足几乎前端开发的所有需求。
+Vscode,首推Vscode(下载地址:https://code.visualstudio.com/),轻量级的编辑器，丰富的插件满足几乎前端开发的所有需求。
 
 ## 谷歌浏览器
 
