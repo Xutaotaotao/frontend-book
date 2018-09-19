@@ -24,3 +24,5 @@ Node.js可以用nvm管理,各自的版本管理工具
 ### Yarn
 Yarn 对你的代码来说是一个包管理器,可以快速下载依赖，当你觉得npm下载依赖太慢时，可以考虑yarn。（https://yarnpkg.com/zh-Hans/）
 
+
+主要是几种单据，报销单，借款单

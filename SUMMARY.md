@@ -84,6 +84,8 @@
     * [开发模式配置](chapter10/section10.7.md)
     * [生产环境配置](chapter10/section10.8.md)
 * [VUE](chapter11/README.md)
+    * [VUE项目结构](chapter11/section11.1.md)
+    * [VUE组件](chapter11/section11.2.md)
 * [Angular](chapter12/README.md)
 * [Ionic](chapter13/README.md)
 * [React](chapter14/README.md)
