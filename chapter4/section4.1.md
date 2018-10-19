@@ -1,4 +1,4 @@
-# JavaScript基础(ES5)
+# JavaScript基础
 
 ## 变量
 
@@ -205,5 +205,3 @@ var joinArr3 = testArr.join('-');//'Fire-Wind-Rain'
 var array1 = [1,2,'a','b1'];
 var stringArr = array1.toString();//'1,2,a,b1'
 ```
-
-### 数组迭代方法

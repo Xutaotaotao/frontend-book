@@ -281,3 +281,25 @@ Map.prototype.filterValues = function(fn){
 
     }
 ```    
+
+### 5.检查一个值是否是基本布尔类型，并返回 true 或 false。
+
+```
+function boo(bool) {
+  // What is the new fad diet for ghost developers? The Boolean.
+  return typeof bool === 'boolean';
+}
+```
+
+### 6.Sorted Union
+写一个 function，传入两个或两个以上的数组，返回一个以给定的原始数组排序的不包含重复值的新数组。
+
+```
+function unite(arr1, arr2, arr3) {
+  return Array.prototype.slice.call(arguments).reduce((prev,next) => {
+    return prev.concat(next.filter(e => prev.indexOf(e) === -1));
+  });
+}
+```
+
+
