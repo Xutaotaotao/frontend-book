@@ -8,7 +8,7 @@
 
 ## 2.单文件组件
 
-每个.vue文件包含三种类型的顶级语言块 <template>, <script> 和 <style>。这三个部分别代表了 html,js,css。
+每个.vue文件包含三种类型的顶级语言块` <template>`, `<script> `和 `<style>`。这三个部分别代表了 html,js,css。
 template部分放置div标签包裹所有代码，div里面可以嵌套自定义组件，也可以是常规的html语法。
 script部分放置js代码，一般结构是引入此组件需要的工具，额外组件，额外方法。然后exprot default里面就会暴露出本组件相应的名称(name)，需要的引用的组件(components)，数据(data)，生命周期钩子，方法(method),侦听器(watch)等
 style部分放置css,less,sass,styl等样式代码，根据你预编译样式的工具来写相应的样式语法。
