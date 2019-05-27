@@ -5,6 +5,7 @@
 参考链接：
 （https://www.jianshu.com/p/0697dd9199cf）
 （https://www.jianshu.com/p/f05269760d84)
+
 ## 2.单文件组件
 
 每个.vue文件包含三种类型的顶级语言块 <template>, <script> 和 <style>。这三个部分别代表了 html,js,css。

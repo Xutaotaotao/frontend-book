@@ -57,7 +57,7 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../chapter12/" />
+    <link rel="next" href="section11.1.html" />
     
     
     <link rel="prev" href="../chapter10/section10.8.html" />
@@ -1233,6 +1233,38 @@
             
 
             
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="section11.1.html">
+            
+                <a href="section11.1.html">
+            
+                    
+                    VUE项目结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="section11.2.html">
+            
+                <a href="section11.2.html">
+            
+                    
+                    VUE组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
         </li>
     
         <li class="chapter " data-level="1.13" data-path="../chapter12/">
@@ -1319,8 +1351,45 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="vue">VUE</h1>
-
+                                <h1 id="vue&#x9879;&#x76EE;">VUE&#x9879;&#x76EE;</h1>
+<h2 id="1&#x9879;&#x76EE;&#x914D;&#x7F6E;">1.&#x9879;&#x76EE;&#x914D;&#x7F6E;</h2>
+<p>&#x5404;&#x79CD;&#x73AF;&#x5883;&#x7684;&#x914D;&#x7F6E;&#xFF0C;&#x9879;&#x76EE;&#x6784;&#x5EFA;&#x914D;&#x7F6E;&#xFF0C;webpack&#x6253;&#x5305;&#x914D;&#x7F6E;&#xFF0C;&#x4F9D;&#x8D56;&#x9879;&#x914D;&#x7F6E;&#xFF0C;&#x8DEF;&#x7531;&#x914D;&#x7F6E;
+&#x53C2;&#x8003;&#x94FE;&#x63A5;&#xFF1A;
+&#xFF08;<a href="https://www.jianshu.com/p/0697dd9199cf&#xFF09;" target="_blank">https://www.jianshu.com/p/0697dd9199cf&#xFF09;</a>
+&#xFF08;<a href="https://www.jianshu.com/p/f05269760d84" target="_blank">https://www.jianshu.com/p/f05269760d84</a>)</p>
+<h2 id="2&#x5355;&#x6587;&#x4EF6;&#x7EC4;&#x4EF6;">2.&#x5355;&#x6587;&#x4EF6;&#x7EC4;&#x4EF6;</h2>
+<p>&#x6BCF;&#x4E2A;.vue&#x6587;&#x4EF6;&#x5305;&#x542B;&#x4E09;&#x79CD;&#x7C7B;&#x578B;&#x7684;&#x9876;&#x7EA7;&#x8BED;&#x8A00;&#x5757; <template>, <script> 和 <style>。这三个部分别代表了 html,js,css。
+template部分放置div标签包裹所有代码，div里面可以嵌套自定义组件，也可以是常规的html语法。
+script部分放置js代码，一般结构是引入此组件需要的工具，额外组件，额外方法。然后exprot default里面就会暴露出本组件相应的名称(name)，需要的引用的组件(components)，数据(data)，生命周期钩子，方法(method),侦听器(watch)等
+style部分放置css,less,sass,styl等样式代码，根据你预编译样式的工具来写相应的样式语法。</p>
+<p>生命周期钩子：
+<code>beforeCreate</code>：在实例初始化之后，数据观测 (data observer) 和 event/watcher 事件配置之前被调用
+<code>created</code>：在实例创建完成后被立即调用
+<code>beforeMount</code>:在挂载开始之前被调用
+<code>mounted</code>:el 被新创建的 vm.$el 替换，并挂载到实例上去之后调用该钩子
+<code>beforeUpdate</code>:数据更新时调用，发生在虚拟 DOM 打补丁之前
+<code>updated</code>:由于数据更改导致的虚拟 DOM 重新渲染和打补丁，在这之后会调用该钩子。
+<code>activated</code>:keep-alive 组件激活时调用。
+<code>deactivated</code>:keep-alive 组件停用时调用。
+<code>beforeDestroy</code>:实例销毁之前调用
+<code>destroyed</code>:Vue 实例销毁后调用
+参考链接：
+（<a href="https://cn.vuejs.org/v2/guide/single-file-components.html#ad）">https://cn.vuejs.org/v2/guide/single-file-components.html#ad）</a>
+（<a href="https://www.cnblogs.com/xinhudong/p/7878899.html）">https://www.cnblogs.com/xinhudong/p/7878899.html）</a></p>
+<h2>3.http服务</h2>
+<p>根据页面需要的数据来加载http服务，在vue项目里面一般采用封装好的Axios来请求数据，如果一个服务会被多个页面调用就封装到一个serve文件下，然后再在相应的组件里面调用相应的方法。</p>
+<p>参考链接：
+（<a href="https://www.kancloud.cn/yunye/axios/234845）">https://www.kancloud.cn/yunye/axios/234845）</a>
+（<a href="https://www.jianshu.com/p/0ea02376ca90）">https://www.jianshu.com/p/0ea02376ca90）</a></p>
+<h2>4.数据渲染</h2>
+<p>vue大多数据源是双向数据绑定，用v-for来渲染列表</p>
+<h2>5.组件传值</h2>
+<p>组件之间的传值可能通过props或者路由来传参</p>
+<h2>6.vuex</h2>
+<p>参考链接：<a href="https://vuex.vuejs.org/zh/">https://vuex.vuejs.org/zh/</a></p>
+<h2>7.vux</h2>
+<p>参考链接：<a href="https://vux.li/">https://vux.li/</a></p>
+</script></template></p>
                                 
                                 </section>
                             
@@ -1352,7 +1421,7 @@
                 </a>
                 
                 
-                <a href="../chapter12/" class="navigation navigation-next " aria-label="Next page: Angular">
+                <a href="section11.1.html" class="navigation navigation-next " aria-label="Next page: VUE项目结构">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1363,7 +1432,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"VUE","level":"1.12","depth":1,"next":{"title":"Angular","level":"1.13","depth":1,"path":"chapter12/README.md","ref":"chapter12/README.md","articles":[]},"previous":{"title":"生产环境配置","level":"1.11.8","depth":2,"path":"chapter10/section10.8.md","ref":"chapter10/section10.8.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter11/README.md","mtime":"2018-08-23T12:52:13.232Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-08-24T07:07:32.380Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"VUE","level":"1.12","depth":1,"next":{"title":"VUE项目结构","level":"1.12.1","depth":2,"path":"chapter11/section11.1.md","ref":"chapter11/section11.1.md","articles":[]},"previous":{"title":"生产环境配置","level":"1.11.8","depth":2,"path":"chapter10/section10.8.md","ref":"chapter10/section10.8.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter11/README.md","mtime":"2019-05-27T03:35:22.557Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-05-27T08:32:10.128Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -1371,10 +1440,6 @@
         
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
-    
-        
-        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
-        
     
         
         <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
