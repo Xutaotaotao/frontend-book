@@ -1,2 +1,2 @@
-# jQuery
+# JavaScript问题集
 
